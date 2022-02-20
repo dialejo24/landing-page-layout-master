@@ -11,11 +11,11 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <header>
-    <div class="container">
+  <header class="header">
+    <div class="container header__content">
       <img src="images/logo.svg" alt="company logo">
       <nav>
-        <ul>
+        <ul class="nav__links">
           <li><a href="#">Features</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">Sign In</a></li>
@@ -24,12 +24,12 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="section1">
       <div class="container">
         <img src="images/illustration-1.svg" alt="ilustration about two people holding files">
         <div class="info-sec1">
-          <h2>All your files in one secure location, accessible anywhere</h2>
+          <h1>All your files in one secure location, accessible anywhere</h1>
           <p>
             Fylo stores your most important files in one secure location. 
             Access them wherever you need, share and collaborate with friends, 
@@ -42,12 +42,13 @@
         </div>
       </div>
     </section>
+    <img src="images/bg-curve-desktop.svg" alt="" class="decoration">
     <section class="section2">
       <div class="container">
         <img src="images/illustration-2.svg" alt="ilustration about three people showing three files">
         <div class="info-sec2">
           <h2>Stay productive, wherever you are</h2>
-          <p>
+          <p class="para-sec2">
             Never let location be an issue when accessing your files. Fylo has you 
             covered for all of your file storage needs.
           </p>
@@ -55,7 +56,9 @@
             Securely share files and folders with friends, family and colleagues for 
             live collaboration. No email attachments required!
           </p>
-          <p><a href="#">See how Fylo works <img src="images/icon-arrow.svg" alt="arrow icon"></a></p>
+          <div>
+            <p class="link-fylo"><a href="#">See how Fylo works</a><img src="images/icon-arrow.svg" alt="arrow icon"></p>
+          </div>
         </div>
         <div class="quote">
           <img src="images/icon-quotes.svg" alt="quotes icon">
@@ -91,10 +94,10 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
+  <footer class="footer">
+    <div class="container footer__content">
       <ul>
-        <li><img src="images/logo.svg" alt="company logo"></li>
+        <li><img src="images/logo2.svg" alt="company logo"></li>
         <li><img src="images/icon-phone.svg" alt="phone icon"> Phone: +1-543-123-4567</li>
         <li><img src="images/icon-email.svg" alt="email icon">example@fylo.com</li>
       </ul>

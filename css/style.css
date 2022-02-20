@@ -1,3 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    /*Primary colors*/
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /*Accent*/
+    --bright-blue:hsl(224, 93%, 58%);
+    --moderate-cyan:hsl(170, 45%, 43%);
+
+    /*neutral*/
+    --light-grayish-blue:hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*General CSS*/
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+input{
+    padding:0.7em 1em;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+button{
+    background-color: var(--bright-blue);
+    border:none;
+    color:var(--light-grayish-blue);
+    font-weight: bold;
+    padding:0.7em;
+    font-family: 'Raleway', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width:90%;
+}
+.header,
+.section1,
+.section2,
+.section3,
+.footer{
+    display: grid;
+    justify-items: center;
+}
+
+/*header*/
+.header__content{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1em 6em;
+    align-items: center;
+}
+.header__content img{
+    width:6em;
+}
+.nav__links{
+    display: flex;
+    gap:1.5em;
+}
+.nav__links a{
+    color:var(--very-dark-blue);
+    font-size:.9rem;
+}
+
+/*section 1 (main)*/
+.info-sec1{
+    color: var(--very-dark-blue);
+    text-align: center;
+}
+.info-sec1 h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-block: 1.5em 1em;
+    font-size: 1.67rem;
+}
+.info-sec1 p{
+    margin-bottom: 2em;
+    font-size: 0.94rem;
+}
+.section1 input{
+    width:90%;
+    border-radius: 5px;
+    border:1px solid var(--very-dark-blue);
+    margin-bottom: 1.3em;
+}
+.section1 button{
+    width:90%;
+    border-radius: 5px;
+    margin-bottom: 6em;
+}
+
+.decoration{
+    display: block;
+    width:100%;
+}
+
+/*section 2 (main)*/
+.section2{
+    background-color: var(--light-grayish-blue);
+    padding-top: 3.5em;
+}
+.info-sec2 h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    color: var(--very-dark-blue);
+    margin-block: 4.5em 1.7em;
+}
+.info-sec2 p{
+    font-size: 0.92rem;
+    color: var(--light-gray);
+}
+.para-sec2{
+    margin-bottom: 1em;
+}
+.info-sec2 div{
+    display: flex;
+    justify-content: center;
+}
+.link-fylo{
+    border-bottom: 1.5px solid var(--moderate-cyan);
+    display: inline-block;
+    margin-block:2em 3em;
+}
+.info-sec2 a{
+    font-size: .95rem;
+    font-family: 'Raleway', sans-serif;
+    color:var(--moderate-cyan);
+}
+.quote{
+    background-color: white;
+    padding: 1.2em 1.6em;
+    width: 85%;
+    margin-inline: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px 0px var(--light-gray);
+    margin-bottom: 4.5em;
+}
+.quote blockquote{
+    font-size: .66rem;
+    line-height: 1.7;
+}
+.ceo{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-top: .8em;
+}
+.ceo img{
+    border-radius: 50%;
+    width:1.8em;
+}
+.name{
+    font-size: .66rem;
+    color:var(--very-dark-blue);
+    font-weight: bold;
+}
+.role{
+    font-size:.56rem;
+    color:var(--very-dark-blue);
+}
+
+/*section 3 (main)*/
+.section3{
+    background-color: var(--desaturated-blue);
+    padding:4em 1em;
+}
+.info-sec3 h2{
+    color:var(--light-grayish-blue);
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+.info-sec3 p{
+    font-size: 0.97rem;
+    color: var(--light-grayish-blue);
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.section3 form{
+    text-align: center;
+}
+.section3 input{
+    width:80%;
+    margin-bottom: .7em;
+}
+.section3 button{
+    width:80%;
+}
+
+/*footer*/
+.footer__content{
+    margin: 4em 0em 5em auto;
+    display: grid;
+    gap:3em;
+}
+.footer__content ul{
+    display: grid;
+    gap:1em;
+}
+.footer, .footer a{
+    background-color: var(--very-dark-blue);
+    color:var(--light-grayish-blue);
+}
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
