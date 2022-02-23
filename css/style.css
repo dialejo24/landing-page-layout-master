@@ -135,7 +135,7 @@ li{
 .para-sec2{
     margin-bottom: 1em;
 }
-.info-sec2 div{
+.info-sec2 .link-fylo__container{
     display: flex;
     justify-content: center;
 }
@@ -173,13 +173,13 @@ li{
     width:1.8em;
 }
 .name{
-    font-size: .66rem;
-    color:var(--very-dark-blue);
+    font-size: .66rem !important;
+    color:var(--very-dark-blue) !important;
     font-weight: bold;
 }
 .role{
-    font-size:.56rem;
-    color:var(--very-dark-blue);
+    font-size:.56rem !important;
+    color:var(--very-dark-blue) !important;
 }
 
 /*section 3 (main)*/
