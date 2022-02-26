@@ -218,12 +218,16 @@ li{
 /*footer*/
 .footer__content{
     margin: 4em 0em 5em auto;
-    display: grid;
-    gap:3em;
+}
+.logo-container{
+    margin-bottom: 1em;
 }
 .footer__content ul{
     display: grid;
     gap:1em;
+}
+.footer__links{
+    margin-top:3em;
 }
 .footer, .footer a{
     background-color: var(--very-dark-blue);
@@ -304,6 +308,20 @@ li{
     }
     .section3 button{
         max-width: 15em;
+    }
+
+
+    .footer__content{
+        margin: initial;
+        margin-block: 4em 5em;
+    }
+    .footer-links__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+    }
+    .footer__links{
+        margin-top:initial;
     }
 
 }
